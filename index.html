@@ -1,0 +1,991 @@
+<html>
+
+<head>
+    <title>ROSSI Nathan</title>
+    <!--<link rel="stylesheet" href="./CSS/oui.css">-->
+    <link rel="stylesheet" href="./CSS/oui.css">
+    <link rel="stylesheet" href="./CSS/non.css">
+</head>
+
+<body>
+
+    <button class="btn" onclick="topFunction()" id="myBtn" title="Retour haut de page">Haut</button>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="divAccueil" id="accueil">
+        <!--<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>-->
+
+        <h1 style="text-decoration: underline red;">Nathan ROSSI</h1>
+        <h2>Portefolio</h2>
+        <br/>
+
+        <div class="sticky">
+            <a href="#" class="btn" onclick="fonctionClear()">Accueil</a>
+            <a href="#" class="btn" onclick="fonctionShowInfo()">À propos du BTS SIO</a>
+            <a href="#" class="btn" onclick="fonctionShowProjets()">Projets</a>
+            <a href="#" class="btn" onclick="fonctionShowSkill()">Compétences</a>
+            <a href="https://www.pearltrees.com/22nathan" class="btn" target="_blank">Veille technologique</a>
+            <!--<a href="#" class="btn">Contact</a>-->
+            <!--<a href="https://twitter.com/freshcontrast" target="_blank" class="footer">@FRESHCONTRAST</a>-->
+        </div>
+
+        <br/><br/>
+        <div id="accueilV">
+            <h2 style="text-align: center; color: rgb(184, 184, 184);">Bienvenue sur mon Portfolio</h2>
+            <h2 style="text-align: center; color: rgb(184, 184, 184);">
+                Vous y retrouverez l'ensemble de mes réalisations que j'ai pu effectuer<br/>
+                durant mon BTS SIO Option SLAM
+            </h2>
+        </div>
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="divInfo" style="display: none;" id="info">
+
+        <h1 style="text-align:left; text-decoration: underline red;">
+            &#9658; Le BTS SIO
+        </h1>
+
+        <div style="text-align: left; color: rgb(199, 199, 199);">
+            <h2 style="text-align: center;">Présentation globale</h2>
+            <br/>
+            <p style="margin-left: 10%; line-height: 145%;">
+                Le BTS Services Informatiques aux Organisations est un diplôme reconnu par l'état de niveau BAC+2.<br/>
+                Il remplace depuis Septembre 2011, l'ancien BTS IG (Informatique de gestion).<br/>
+                En effet, cette nouvelle formule répond aux attentes de la profession en matière de qualification.<br/>
+                Le programme a évolué en fonction de la place et du rôle des TIC (Technologies de l'Information et de la Communication)<br/>
+                Et propose deux spécialités bien distinctes : Le BTS SIO Option SISR et le BTS SIO Option SLAM.<br/><br/>
+            </p>    
+        </div>
+
+        <!----------------->
+        <div style="color: rgb(199, 199, 199);">
+            <!----------------->
+
+            <p style="text-align: center;">&#9947;</p>
+            <h2 style="text-align: center;">Les Matières enseignées</h2>
+            <ul style="margin-left: 10%; line-height: 145%;">
+                Voici les différentes matières enseignées en BTS SIO :
+                <li class="c">Culture et expression française</li>
+                <li class="c">Langue vivante étrangère</li>
+                <li class="c">Analyse économique, managériale et juridique des services informatiques</li>
+                <li class="c">Spécialité SISR (réseau)</li>
+                <li class="c">Spécialité SLAM (développement)</li>
+                <li class="c">Projet personnalisé encadré</li>
+                <li class="c">Mathématiques pour l’informatique</li>
+            </ul>
+
+            <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>
+            <h2 style="text-align: center;">Les Options du BTS SIO</h2>
+            
+            <span class="b" style="margin-left: 7%; max-width: 45%;">
+                <p>OPTION A : SISR</p>
+                <p>SOLUTIONS D'INFRASTRUCTURES SYSTÈMES ET RÉSEAUX</p>
+                <p>
+                    La spécialisation SISR du BTS SIO permet d’apprendre un métier 
+                    qui consiste à installer, configurer et gérer les équipements 
+                    et les réseaux informatiques.<br/>
+                    Cela signifie intervenir sur la conception, 
+                    la mise en place, le déploiement et la maintenance de programmes destinés 
+                    à la gestion au sein d’une organisation.
+                </p>
+            </span>
+            <!--/////////////////////////////////////////////////////////////////////////////-->
+            <span class="b" style="margin-left: 55%; max-width: 45%;">
+                <p>OPTION B : SLAM</p>
+                <p>SOLUTIONS LOGICIELLES ET APPLICATIONS MÉTIERS</p>
+                <p>
+                    La spécialisation SLAM du BTS SIO est elle plus orientée Développement.<br/> 
+                    Elle permet d'apprendre à réaliser des logiciels, sites webs, applications mobiles, 
+                    mais aussi de rédiger des documentations techniques liées à celles-ci.<br/> 
+                    De plus, elle permet d'apprendre à former des utilisateurs pour gérer 
+                    la maintenance des applications.
+                </p>
+                <br/> <br/> <br/> <br/> <br/>  
+            </span>
+
+            <!----------------->
+        </div>    
+        <!----------------->
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="divProjets" style="display: none;" id="projets">
+
+        <h1 style="text-align:left; text-decoration: underline red;">
+            &#9658; Projets
+        </h1>
+        
+        <div class="tabs">
+
+            <div class="tab-3" style="min-width: 25%;">
+                    <label for="tab3-1">PPE</label>
+                    <input id="tab3-1" name="tabs-two" type="radio" checked="checked" onclick="ff15()">
+            </div>
+            <div class="tab-3" style="min-width: 25%;">
+                    <label for="tab3-2">TP</label>
+                    <input id="tab3-2" name="tabs-two" type="radio" onclick="ff15()">
+            </div>
+            <div class="tab-3" style="min-width: 25%;">
+                    <label for="tab3-3">STAGE</label>
+                    <input id="tab3-3" name="tabs-two" type="radio" onclick="ff15()">
+            </div>
+            <div class="tab-3" style="min-width: 25%;">
+                    <label for="tab3-4">PROJET PERSONNEL</label>
+                    <input id="tab3-4" name="tabs-two" type="radio" onclick="ff15()">  
+            </div>    
+
+            <!-----------------------------------------///////////////////////////////////////////////-->
+
+            <div class="tab-3" id="divppe">
+                <!--<label for="tab3-1">PPE</label>
+                <input id="tab3-1" name="tabs-two" type="radio" checked="checked" onclick="ff15()">-->
+                <div style="text-align: left; color: rgb(199, 199, 199); min-width: 100%;">
+                    <!--////////////////////////////-->
+                    <br/><br/>
+
+                    <div style="text-align: center;">
+                        <!--<a href="#ANGENIEUX" class="btn" style="text-shadow: none;">ANGENIEUX</a>-->
+                        <a href="#RESANET" class="btn" style="text-shadow: none;">RESANET</a>
+                        <a href="#GSB" class="btn" style="text-shadow: none;">GSB</a>
+                    </div>
+
+                    <br/>
+
+                    <!--<br/>
+                    <h4 id="ANGENIEUX"> &#9658; ANGENIEUX</h4>
+                    <div>
+                        <p>
+                            aaa 
+                        </p>
+                        <p>
+                        </p>
+                        <br/>
+                        <a href="" target="_blank" class="btn" style="text-shadow: none;">ffLien Github</a>
+                    </div>-->
+                    <!--////////////////////////////-->
+                    <!--<p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>--><br/>
+
+                    <h4 id="RESANET"> &#9658; RESANET</h4>
+                    <div>
+                        <p style=" line-height: 145%;">
+                            Développement d’une application web baptisée RESANET, dédiée à la gestion des 
+                            réservations des repas au restaurant d’entreprise.
+                        </p>
+                        <br/>
+                        <a href="https://github.com/22Nathan/Resanet" target="_blank" class="btn" style="text-shadow: none;">Lien Github</a>
+                        <br/><br/><br/>
+                        <div>
+                            <span>
+                                <a href="./IMAGE/resanet/1.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/1.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/2.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/2.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/3.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/3.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/4.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/4.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/5.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/5.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/6.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/6.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/7.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/7.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/resanet/8.PNG" target="_blank">
+                                    <img src="./IMAGE/resanet/8.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!--////////////////////////////-->
+                    <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p><br/>
+                    <h4 id="GSB"> &#9658; GSB</h4>
+                    <div>
+                        <p style=" line-height: 145%;">
+                            Suite à une récente fusion le laboratoire Galaxy Swiss Bourdin souhaite uniformiser la 
+                            gestion des frais professionnels des visiteurs médicaux via le développement en interne d’une application WEB intitulée Gsb-AppliFrais.
+                            <br/> 
+                            Cette application est destinée à la fois aux visiteurs médicaux et aux comptables en charges de leur gestion. 
+                            Elle permet de saisir et d’enregistrer tous les frais engagés par les visiteurs médicaux aussi bien pour 
+                            l’activité directe (déplacement, restauration et hébergement) que pour les activités annexes (événementiel, conférences, autres). 
+                            Elle doit permettre à présent aux comptables de réaliser les validations et mise en paiement de ces frais.
+                        </p>
+                        <br/>
+                        <a href="https://github.com/22Nathan/GSB" target="_blank" class="btn" style="text-shadow: none;">Lien Github</a>
+                    </div> 
+                    <div>
+                        <span>
+                            <a href="./IMAGE/gsb/1.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/1.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/2.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/2.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/3.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/3.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/4.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/4.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/5.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/5.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/6.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/6.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/7.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/7.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/8.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/8.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/9.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/9.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/10.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/10.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/11.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/11.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/12.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/12.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/gsb/13.PNG" target="_blank">
+                                <img src="./IMAGE/gsb/13.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                    </div>  
+                    <!--////////////////////////////--> 
+                </div>
+
+                <!----><br/>
+                <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p><br/>
+                <!----><br/>
+
+            </div>
+
+            <!-----------------------------------------///////////////////////////////////////////////-->
+
+            <div class="tab-3" id="divtp">
+                <!--<label for="tab3-2">TP</label>
+                <input id="tab3-2" name="tabs-two" type="radio" onclick="ff15()">-->
+                <div style="text-align: left; color: rgb(199, 199, 199); min-width: 100%;">
+                    <!--////////////////////////////-->
+                    <br/><br/>
+
+                    <div style="text-align: center; text-shadow: none;">
+                        <a href="#ANDROIDGSBRV" class="btn">ANDROID GSB-RV</a>
+                        <a href="#JavaFXGSBRV"  class="btn">JavaFX GSB-RV</a>
+                    </div>
+
+                    <br/><br/>
+                    <h4 id="ANDROIDGSBRV"> &#9658; ANDROID GSB-RV</h4>
+                    <div>
+                        <p style=" line-height: 145%;">
+                            Suite à une récente fusion le laboratoire Galaxy Swiss Bourdin souhaite uniformiser la gestion des frais 
+                            professionnels des visiteurs médicaux via le développement en interne d’une application WEB intitulée Gsb-AppliFrais.
+                            <br/> 
+                            Cette application est destinée à la fois aux visiteurs médicaux et aux comptables en charges de leur gestion. 
+                            Elle permet de saisir et d’enregistrer tous les frais engagés par les visiteurs médicaux aussi bien pour 
+                            l’activité directe (déplacement, restauration et hébergement) que pour les activités annexes (événementiel, conférences, autres). 
+                            <br/>
+                            Le laboratoire désire désormais mettre à disposition des visiteurs médicaux une application permettant de centraliser les rapports de visite. 
+                            Cette base d'information sera utilisée à des fins d'élaboration de la démarche de communication auprès des praticiens et donnera 
+                            une vision individuelle et synthétique de l'activité de représentation. 
+                            Pour permettre une aide au renseignement des rapports, l'application fournira une description des produits du laboratoire, 
+                            les coordonnées précises des praticiens et des informations détaillées les concernant.
+                            L'application doit permettre aux visiteurs de pouvoir rédiger des rapports de visite à l'aide d'un formulaire.
+                        </p>
+                        <br/>
+                        <a href="" target="_blank" class="btn"  style="text-shadow: none;">ffLien Github</a>
+                    </div>
+                    <!--////////////////////////////-->
+                    <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>
+                    <h4 id="JavaFXGSBRV"> &#9658; JavaFX GSB-RV</h4>
+                    <div>
+                        <p style=" line-height: 145%;">
+                            Les rapports de visite sont actuellement gérés à l’aide d’une application Access que 
+                            les visiteurs utilisent dans les locaux de l’entreprise sur différents postes dédiés à cet effet.
+                            <br/> 
+                            Un projet d’application Web est en cours pour rendre accessible cette gestion à partir de n’importe quel ordinateur. 
+                            Cependant, l’accès à cette gestion doit être maintenu à l’aide d’une application de bureau (client lourd), 
+                            inspirée de l’application Access. Il a été décidé de développer cette dernière en Java FX.
+                            <br/>
+                            L'application doit permettre aux délégués régionaux en s’authentifiant de consulter les comptes-rendus des 
+                            visiteurs de leur régions et la liste des praticiens hésitants à l’aide de l’application graphique Java JX.
+                        </p>
+                        <br/>
+                        <a href="https://github.com/22Nathan/JavaFX" target="_blank" class="btn" style="text-shadow: none;">Lien Github</a>
+                    </div>
+                    <br/><br/>
+                    <div>
+                        <span>
+                            <a href="./IMAGE/javafx/1.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/1.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/2.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/2.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/3.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/3.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/4.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/4.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/5.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/5.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/6.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/6.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/7.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/7.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/8.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/8.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/9.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/9.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/10.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/10.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/11.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/11.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/12.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/12.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/13.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/13.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/14.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/14.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/15.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/15.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="./IMAGE/javafx/16.PNG" target="_blank">
+                                <img src="./IMAGE/javafx/16.PNG" width="20%;" height="auto;">
+                            </a>
+                        </span>
+                    </div>  
+                    <!--////////////////////////////-->
+                </div>
+
+                <!----><br/>
+                <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>
+                <!----><br/>
+
+            </div>
+
+            <!-----------------------------------------///////////////////////////////////////////////-->
+
+            <div class="tab-3" id="divstage">
+                <!--<label for="tab3-3">STAGE</label>
+                <input id="tab3-3" name="tabs-two" type="radio" onclick="ff15()">-->
+                <div style="text-align: left; color: rgb(199, 199, 199); min-width: 100%;">
+                    <br/><br/>
+                    <h3> Stage de deuxième année | Orange | 4/01/2021 au 12/02/2021</h3>
+                    <br/>
+                    <div style="text-align: center; text-shadow: none;">
+                        <a href="#MOBI" class="btn">Mobilité carbone</a>
+                        <a href="#MESSA"  class="btn">Messagerie verte</a>
+                    </div>
+                    <br/><br/>
+
+                    <div style=" margin-left: 2%; /*border-left: 2px solid #fd264f;*/ padding-left: 11px;">
+                        <h3 id="MOBI">&#9658; Application web - Mobilité carbone</h3>
+                        <h4>Moyens utilisés</h4>
+                        <p style="margin-left: 8%;">
+                            PHP  |  MySQL  |  SQL  |  WAMP  |  phpMyAdmin  |  PhpSpreadsheet ( library externe PHP )
+                        </p>
+                        <!---->
+                        <h4>Objectif</h4>
+                        <p style="margin-left: 8%;">
+                            Mettre en place une application web visant à :<br/>
+                            calculer le taux en CO2 d'un trajet selon critères
+                            et proposer une alternative plus écologique, qui consomme moins.<br/>
+                        </p> 
+                        
+                        <div>
+                            <span>
+                                <a href="./IMAGE/mobi/1.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/1.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/2.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/2.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/3.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/3.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/4.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/4.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/5.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/5.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/6.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/6.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/7.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/7.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/8.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/8.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/9.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/9.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/10.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/10.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/11.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/11.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/12.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/12.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/13.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/13.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/mobi/14.PNG" target="_blank">
+                                    <img src="./IMAGE/mobi/14.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!----><br/>
+                    <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>
+                    <!----><br/>
+
+
+
+
+                    <div style=" margin-left: 2%; /*border-left: 2px solid #fd264f;*/ padding-left: 11px;">
+                        <h3 id="MESSA">&#9658; Application web - Messagerie verte</h3>
+                        <h4>Moyens utilisés</h4>
+                        <p style="margin-left: 8%;">
+                            PHP  |  MySQL  |  SQL  |  WAMP |  phpMyAdmin  |  JpGraph ( library externe PHP )
+                        </p>
+                        <!---->
+                        <h4>Objectif</h4>
+                        <p style="margin-left: 8%;">
+                            Mettre en place une application web visant à :<br/>
+                            calculer un taux en CO2 d'une messagerie électronique
+                            et proposer un suivi des émmitions consultable selon le rôle.<br/>
+                        </p>    
+
+                        <div>
+                            <span>
+                                <a href="./IMAGE/messa/1.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/1.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/2.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/2.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/3.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/3.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/4.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/4.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/5.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/5.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/6.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/6.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/7.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/7.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/8.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/8.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/9.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/9.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/10.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/10.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/11.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/11.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/12.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/12.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/13.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/13.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                            <span>
+                                <a href="./IMAGE/messa/13.2.PNG" target="_blank">
+                                    <img src="./IMAGE/messa/13.2.PNG" width="20%;" height="auto;">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!----><br/>
+                    <p style="color: rgb(199, 199, 199); text-align: center;">&#9947;</p>
+                    <!----><br/>
+
+                </div>
+            </div>
+
+            <!-----------------------------------------///////////////////////////////////////////////-->
+
+            <div class="tab-3" id="divpp">
+                <!--<label for="tab3-4">PROJET PERSONNEL</label>
+                <input id="tab3-4" name="tabs-two" type="radio" onclick="ff15()">-->
+                <div style="text-align: left; color: rgb(199, 199, 199); min-width: 100%;">
+                    <br/><br/>
+                    <h3> &#9658; Ce Portfolio</h3>
+                    <p>
+                        Réalisé en HTML5 CSS3
+                    </p>
+                    <p>
+                        Ctrl + U pour voir le code source 
+                    </p>
+                </div>
+            </div>
+
+            <!-----------------------------------------///////////////////////////////////////////////-->
+
+        </div>
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="divSkill tab-3" style="display: none;" id="skill">
+
+        <h1 style="text-decoration: underline red;">&#9658; Compétences</h2>
+        <ul class="ulSkill">
+            <!--------------------------------->
+            <li> Langages applicatifs : 
+                <ul>
+                    <li>Java</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 60%; text-align: center">60%</div>
+                    </div>
+                    <li>Python 2.7/3.x</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 60%; text-align: center">60%</div>
+                    </div>
+                    <li>PHP</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 75%; text-align: center">75%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!--------------------------------->
+            <li> Langages Web :
+                <ul>
+                    <li> HTML5 / CSS3</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 65%; text-align: center">65%</div>
+                    </div>
+                    <li> XML</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 80%; text-align: center">80%</div>
+                    </div>
+                    <li> JavaScript</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 40%; text-align: center">40%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!--------------------------------->
+            <li> SGBDR :
+                <ul>
+                    <li> PostegreSQL</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 65%; text-align: center">65%</div>
+                    </div>
+                    <li> MySQL</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 75%; text-align: center">75%</div>
+                    </div>
+                    <li> MariaDB</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 75%; text-align: center">75%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+        </ul>
+        <ul class="ulSkill2">    
+            <!--------------------------------->
+            <li> Versioning :
+                <ul>
+                    <li> Git</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 60%; text-align: center">60%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!---------------------------------> 
+            <li> Framework applicatif :
+                <ul>
+                    <li> Flask</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 70%; text-align: center">70%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!---------------------------------> 
+            <li> Framework CSS :
+                <ul>
+                    <li> Bootstrap</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 50%; text-align: center">50%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!---------------------------------> 
+            <li> IDE :
+                <ul>
+                    <li> Eclipse</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 60%; text-align: center">60%</div>
+                    </div>
+                    <li> Netbeans</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 60%; text-align: center">60%</div>
+                    </div>
+                    <li> VSCode</li>
+                    <div class="barre1">
+                        <div class="barre2" style="width: 75%; text-align: center">75%</div>
+                    </div>
+                </ul>
+            </li>
+            <br/>
+            <!--------------------------------->             
+        </ul>
+
+        <!--+++++++++++++-->
+
+        <p style="color: rgb(199, 199, 199); text-align: center; margin-left: -40%;">&#9947;</p>
+        <!--<h2 style="text-decoration: underline red;">&#9658; Tableau de synthèse / Portefeuille de compétences </h2>-->
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--
+    <div id="divFooter" style=" left: 0%; bottom: 0%; width: 100%; text-align: center;">
+        <br/>
+        <br/>
+        <p style="color: rgb(199, 199, 199); text-align: center; text-shadow: black 0.1em 0.1em 0.2em;">&#9947;</p>
+    </div>
+    -->
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    //+---------------------------------------------+//
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    //+---------------------------------------------+//
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    //+---------------------------------------------+//
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    //+---------------------------------------------+//
+    function fonctionClear() {
+      var u = document.getElementById("accueilV");  
+      /**/var y = document.getElementById("info");   /**/
+      /**/var z = document.getElementById("projets");/**/
+      /**/var w = document.getElementById("skill");  /**/
+
+        y.style.display = "none";
+        z.style.display = "none";
+        w.style.display = "none";
+
+        u.style.display = "block";
+    }
+    //+---------------------------------------------+//
+    function fonctionShowInfo() {
+      var y = document.getElementById("info");  
+
+      /**/var u = document.getElementById("accueilV");/**/
+      /**/var z = document.getElementById("projets");/**/
+      /**/var w = document.getElementById("skill");  /**/
+
+      if (y.style.display === "none") {
+        y.style.display = "block";
+
+        z.style.display = "none";
+        w.style.display = "none";
+        u.style.display = "none";
+
+      } else {
+        fonctionClear();
+      }
+    }
+    //+---------------------------------------------+//
+    function fonctionShowProjets() {
+      var z = document.getElementById("projets");  
+
+      /**/var u = document.getElementById("accueilV");/**/
+      /**/var y = document.getElementById("info"); /**/
+      /**/var w = document.getElementById("skill");/**/
+
+      if (z.style.display === "none") {
+        z.style.display = "block";
+        ff15();
+
+        y.style.display = "none";
+        w.style.display = "none";
+        u.style.display = "none";
+        
+      } else {
+        fonctionClear();
+      }
+    }
+    //+---------------------------------------------+//
+    function fonctionShowSkill() {
+      var w = document.getElementById("skill");
+
+      /**/var u = document.getElementById("accueilV");/**/
+      /**/var y = document.getElementById("info");   /**/
+      /**/var z = document.getElementById("projets");/**/
+
+      if (w.style.display === "none") {
+        w.style.display = "block";
+
+        z.style.display = "none";
+        y.style.display = "none";
+        u.style.display = "none";
+
+      } else {
+        fonctionClear();
+      }
+    }
+    //+---------------------------------------------+//
+    function ff15() {
+        var radiobtn1 = document.getElementById("tab3-1");
+        var radiobtn2 = document.getElementById("tab3-2");
+        var radiobtn3 = document.getElementById("tab3-3");
+        var radiobtn4 = document.getElementById("tab3-4");
+
+        var div1 = document.getElementById("divppe");
+        var div2 = document.getElementById("divtp");
+        var div3 = document.getElementById("divstage");
+        var div4 = document.getElementById("divpp");
+
+        if ( radiobtn1.checked ) {
+            div1.style.display = "block";
+            div2.style.display = "none";
+            div3.style.display = "none";
+            div4.style.display = "none";
+        }
+        else if ( radiobtn2.checked ) {
+            div1.style.display = "none";
+            div2.style.display = "block";
+            div3.style.display = "none";
+            div4.style.display = "none";
+        }
+        else if ( radiobtn3.checked ) {
+            div1.style.display = "none";
+            div2.style.display = "none";
+            div3.style.display = "block";
+            div4.style.display = "none";
+        }
+        else if ( radiobtn4.checked ) {
+            div1.style.display = "none";
+            div2.style.display = "none";
+            div3.style.display = "none";
+            div4.style.display = "block";
+        }
+        else {
+            div1.style.display = "none";
+            div2.style.display = "none";
+            div3.style.display = "none";
+            div4.style.display = "none";
+        }
+    }
+    //+---------------------------------------------+//
+</script>
+
+</body>
+</html>
