@@ -34,6 +34,14 @@ body{
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.divParc{
+  font-family: Verdana, 'Oswald', sans-serif;
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
 .divInfo {
   margin-left: 14%;
   width: 70%;

@@ -5,6 +5,7 @@
     <!--<link rel="stylesheet" href="./CSS/oui.css">-->
     <link rel="stylesheet" href="./CSS/oui.css">
     <link rel="stylesheet" href="./CSS/non.css">
+    <link rel="stylesheet" href="./CSS/parc.css">
 </head>
 
 <body>
@@ -24,6 +25,7 @@
         <div class="sticky">
             <a href="#" class="btn" onclick="fonctionClear()">Accueil</a>
             <a href="#" class="btn" onclick="fonctionShowInfo()">À propos du BTS SIO</a>
+            <a href="#" class="btn" onclick="fonctionShowParc()">Mon parcour</a>
             <a href="#" class="btn" onclick="fonctionShowProjets()">Projets</a>
             <a href="#" class="btn" onclick="fonctionShowSkill()">Compétences</a>
             <a href="https://www.pearltrees.com/22nathan" class="btn" target="_blank">Veille technologique</a>
@@ -39,6 +41,63 @@
                 durant mon BTS SIO Option SLAM
             </h2>
         </div>
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="divParc" style="display: none;" id="parc">
+
+        <ul class="timeline">
+
+            <!-- Item 1 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">LP Micdtl FA</span>
+                        <span class="time-wrapper"><span class="time">2021 - 2022</span></span>
+                    </div>
+                    <div class="desc">
+                        LP Métiers de l'informatique <br/>
+                        - Conception, développement, test de logiciels en alternance <br/>
+                        &#9830; Université Sorbonne Paris Nord / Université de Paris
+                    </div>
+                </div>
+            </li>
+          
+            <!-- Item 2 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">BTS SIO Opt. SLAM</span>
+                        <span class="time-wrapper"><span class="time">2019 - 2021</span></span>
+                    </div>
+                    <div class="desc">
+                        BTS <br/>
+                        - Services Informatiques aux Organisations 
+                        - Solutions Logicielles et Applications Métiers <br/>
+                        &#9830; Lycée Louis Armand - Nogent-sur-Marne
+                    </div>
+                </div>
+            </li>
+        
+            <!-- Item 3 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">BAC STI2D Opt. SIN</span>
+                        <span class="time-wrapper"><span class="time">2017 - 2019</span></span>
+                    </div>
+                    <div class="desc">
+                        BAC <br/>
+                        - sciences et technologies de l'industrie et du développement durable
+                        &#9830; Lycée René Cassin - Le Raincy
+                    </div>
+                </div>
+            </li>
+          
+        </ul>
 
     </div>
 
@@ -876,10 +935,12 @@
       /**/var y = document.getElementById("info");   /**/
       /**/var z = document.getElementById("projets");/**/
       /**/var w = document.getElementById("skill");  /**/
+      /**/var r = document.getElementById("parc");   /**/
 
         y.style.display = "none";
         z.style.display = "none";
         w.style.display = "none";
+        r.style.display = "none";
 
         u.style.display = "block";
     }
@@ -890,6 +951,7 @@
       /**/var u = document.getElementById("accueilV");/**/
       /**/var z = document.getElementById("projets");/**/
       /**/var w = document.getElementById("skill");  /**/
+      /**/var r = document.getElementById("parc");   /**/
 
       if (y.style.display === "none") {
         y.style.display = "block";
@@ -897,6 +959,7 @@
         z.style.display = "none";
         w.style.display = "none";
         u.style.display = "none";
+        r.style.display = "none";
 
       } else {
         fonctionClear();
@@ -909,6 +972,7 @@
       /**/var u = document.getElementById("accueilV");/**/
       /**/var y = document.getElementById("info"); /**/
       /**/var w = document.getElementById("skill");/**/
+      /**/var r = document.getElementById("parc");   /**/
 
       if (z.style.display === "none") {
         z.style.display = "block";
@@ -917,6 +981,7 @@
         y.style.display = "none";
         w.style.display = "none";
         u.style.display = "none";
+        r.style.display = "none";
         
       } else {
         fonctionClear();
@@ -929,6 +994,7 @@
       /**/var u = document.getElementById("accueilV");/**/
       /**/var y = document.getElementById("info");   /**/
       /**/var z = document.getElementById("projets");/**/
+      /**/var r = document.getElementById("parc");   /**/
 
       if (w.style.display === "none") {
         w.style.display = "block";
@@ -936,6 +1002,28 @@
         z.style.display = "none";
         y.style.display = "none";
         u.style.display = "none";
+        r.style.display = "none";
+
+      } else {
+        fonctionClear();
+      }
+    }
+    //+---------------------------------------------+//
+    function fonctionShowParc() {
+      var r = document.getElementById("parc");
+
+      /**/var u = document.getElementById("accueilV");/**/
+      /**/var y = document.getElementById("info");   /**/
+      /**/var z = document.getElementById("projets");/**/
+      /**/var w = document.getElementById("skill");   /**/
+
+      if (r.style.display === "none") {
+        r.style.display = "block";
+
+        z.style.display = "none";
+        y.style.display = "none";
+        u.style.display = "none";
+        w.style.display = "none";
 
       } else {
         fonctionClear();
